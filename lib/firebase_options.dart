@@ -59,4 +59,5 @@ class DefaultFirebaseOptions {
     projectId: 'chatora-4df06',
     storageBucket: 'chatora-4df06.firebasestorage.app',
   );
+
 }

@@ -1,7 +1,9 @@
 import 'package:chatora/screens/Home_screen.dart';
+import 'package:firebase_auth/firebase_auth.dart';
+import 'package:firebase_core/firebase_core.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
-
+import 'package:chatora/auth/Login_screen.dart';
 import '../main.dart';
 
 class SplashScreen extends StatefulWidget {
@@ -18,9 +20,16 @@ class _SplashScreenState extends State<SplashScreen> {
   void initState(){
     super.initState();
     Future.delayed(const Duration(milliseconds: 500),(){
-      setState(() {
-        Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>const HomeScreen()));
-      });
+      if(FirebaseAuth.instance.currentUser!=null){
+        setState(() {
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>const HomeScreen()));
+        });
+      }else{
+        setState(() {
+          Navigator.pushReplacement(context, MaterialPageRoute(builder: (_)=>const LoginScreen()));
+        });
+      }
+
     });
   }
   @override

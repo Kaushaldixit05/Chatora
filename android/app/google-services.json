@@ -12,7 +12,20 @@
           "package_name": "com.example.chatora"
         }
       },
-      "oauth_client": [],
+      "oauth_client": [
+        {
+          "client_id": "1071733333481-1k697fir9of0hq2mvje1lofia00na7s9.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.chatora",
+            "certificate_hash": "db3a6426180dfe2d35af84228820cd4f5a4f43e5"
+          }
+        },
+        {
+          "client_id": "1071733333481-kd6dl42mof8f4jjpu6lur5dfkil8v2ck.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
       "api_key": [
         {
           "current_key": "AIzaSyBLIY_Bl-pmOO-ha0bP2T8fkXA54HDtZyM"
@@ -20,7 +33,12 @@
       ],
       "services": {
         "appinvite_service": {
-          "other_platform_oauth_client": []
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1071733333481-kd6dl42mof8f4jjpu6lur5dfkil8v2ck.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
         }
       }
     }
